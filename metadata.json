@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Web Development Startup Portfolio",
+  "description": "A premium, modern, responsive portfolio website for a high-performance web development agency.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --brand-50: #eef2ff;
+  --brand-100: #e0e7ff;
+  --brand-200: #c7d2fe;
+  --brand-300: #a5b4fc;
+  --brand-400: #818cf8;
+  --brand-500: #6366f1;
+  --brand-600: #4f46e5;
+  --brand-700: #4338ca;
+  --brand-800: #3730a3;
+  --brand-900: #312e81;
+  --brand-950: #1e1b4b;
+}
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  /* Overriding blue colors to use the dynamic brand variables */
+  --color-blue-50: var(--brand-50);
+  --color-blue-100: var(--brand-100);
+  --color-blue-200: var(--brand-200);
+  --color-blue-300: var(--brand-300);
+  --color-blue-400: var(--brand-400);
+  --color-blue-500: var(--brand-500);
+  --color-blue-600: var(--brand-600);
+  --color-blue-700: var(--brand-700);
+  --color-blue-800: var(--brand-800);
+  --color-blue-900: var(--brand-900);
+  --color-blue-950: var(--brand-950);
+
+  /* Overriding slate colors to create a warm premium alabaster and charcoal palette */
+  --color-slate-50: #FAF8F5; /* Warm alabaster */
+  --color-slate-100: #F3EFE9;
+  --color-slate-200: #EAE4D9;
+  --color-slate-300: #DCD3C3;
+  --color-slate-400: #A99D8B;
+  --color-slate-500: #8A7E6E;
+  --color-slate-600: #63584B;
+  --color-slate-700: #4C4236;
+  --color-slate-800: #382F24;
+  --color-slate-900: #221C16;
+  --color-slate-950: #12100E;
+}
+
+/* Global Heading Font Overrides for Premium Serif Aesthetic */
+h1, h2, h3, h4, h5, h6, .font-display {
+  font-family: var(--font-display) !important;
+}
+
+/* Elegant visual details */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
